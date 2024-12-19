@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>web page</title>
+	<style type="text/css">
+		.div{
+			height: 960px;
+			width: 100%;
+			position: relative;
+			background-image: url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg');
+			background-repeat: no-repeat;
+	        background-size:cover;
+	        place-content: center;
+	        text-align: center;
+		}
+           
+		.main{
+			height: 950px;
+			width: 700px;
+			background-color: white;
+			position: relative;
+			border: none;
+			box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
+			box-sizing: border-box;
+			margin:auto;
+			}
+        .section{
+        	height: 500px;
+        	width: 700px;
+        	background-color: white;
+
+        	
+        }
+        .image{
+        	height: 350px;
+        	width: 698px;
+        	background-color: white;
+        	float: left;
+        	box-shadow: 0px 0px 3px 0px grey;
+        }
+        .head{
+        	height: 150px;
+        	width: 700px;
+        	background-color: #517fc9;
+        	color: white;
+        	text-align: center;
+        	place-content: center;
+        	font-family: sans-serif;
+        	box-shadow: 0px 0px 3px 0px grey ;
+        	
+        }
+        .section1{
+        	height: 300px;
+        	width: 100%;
+        	background-color: green;
+        }
+        .part1, .part2{
+        	height: 33%;
+        	width: 100%;
+        	background-color: white;
+        	place-content: center;
+        	box-shadow: 0px 0px 3px 0px grey ;
+        }
+        .ng-body, .fb-body, .ins-body{
+            height: 50%;
+            width: 400px;
+            background-color: transparent;
+            margin-left: 100px ;
+}
+        .ng-body1, .fb-body1, .ins-body1 {
+        	height: 100%;
+        	width: 60px;
+        	background-color:transparent;
+        	float: left;
+        	font-size: 35px;
+        	place-content: center;
+        	text-align: center;
+        }
+        .ng-body2, .fb-body2, .ins-body2{
+        	height: 100%;
+        	width: 340px;
+        	background-color: white;
+        	float:left;
+        	font-size: 23px;
+        	text-align: left;
+      }
+        .part3{
+        	height: 34%;
+        	width: 100%;
+        	background-color: white;
+        	place-content: center;
+        	box-shadow: 0px 0px 3px 0px grey;
+        }
+        
+        .section4{
+        	height: 150px;
+        	width: 100%;
+        	background-color: white;
+        	text-align: center;
+        	place-content: center;
+        	box-shadow: 0 0 3px 0 grey;
+
+        }
+        .ea{
+            height: 55px;
+            width: 450px;
+            font-size: 19px;
+            background-color:white;
+            margin-left: 130px ;
+            position: relative;
+            border-radius: 0 0 150px 0 grey;
+
+        }
+        /*.btn{
+        	height: 55px;
+            width: 450px;
+            font-size: 19px;
+            background-color: #f5426f;
+            outline: none;
+            border: none;
+            box-shadow:0 0 6px 3px rgba(0,0,0,0.3);
+            flter: drop-shadow(box-shadow:5px 5px 7px rgba(0,0,0,0.6));
+            cursor: pointer;
+            transition: box shadow 0.3s ease;
+            }
+        .btn:hover{
+            background-color: #f5426f;
+            color: black;
+            box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+            }
+            
+        .area1{
+        	height: 55px;
+        	width: 180px;
+        	background-color:  transparent;
+        	float: left;
+        	text-align: right;
+        	place-content: center;
+        	top: 30px;
+
+        }
+        .area2{
+        	height: 55px;
+        	width: 230px;
+        	background-color: transparent;
+        	float: left;
+        	color: white;
+        	font-size: 20px;
+        	text-align: left;
+        }*/
+        .input{
+        	height: 40px;
+        	width: 450px;
+        	font-size: 25px;
+        	border: 3px solid grey;
+        	border-radius: 5px;
+        	box-shadow:0 0 6px 3px rgba(0,0,0,0.3);
+        	
+        }
+        .input:hover{
+        	background-color: black;
+        	color: white;
+        }
+        .srcc{
+        	background-color:white;
+        	position: relative;
+        	display: inline-block;
+        }
+        .btnbody{
+        	height: 50px;
+        	width: 150px;
+        	background-color: #517fc9;
+        	font-size: 18px;
+        	color: white;
+        	font-family: sans-serif;
+        	border: none;
+        	border-radius: 5px;
+        	margin-left: 20px;
+        	margin-top: 50px;
+        	transition: 0.3s ease;
+
+        }
+
+         .srcc .btn1{
+            width: 200px;
+            height: 30px;
+        	visibility: hidden;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .srcc .btn1::after{
+	        content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent ;
+         }
+        .srcc:hover .btn1 {
+            visibility: visible;
+            opacity: 1;
+         }
+
+        .btnbody:hover{
+        	background-color: #3455eb;
+        	color: white;
+        	cursor: pointer;
+        	box-shadow: 0 0 5px #3455eb,
+        	            0 0 20px #3455eb,
+        	            0 0 60px #3455eb,
+        	            0 0 150px #3455eb;
+        }
+        
+        /*@media only screen and (max-width: 600px){
+        	.div{
+        		width: 100%;
+        	}
+        .main{
+        	width: 100%;
+        	
+        }
+        .section{
+        	width: 100%;
+        	
+        }
+        .image {
+				width: 100%;
+				height: auto;
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.head {
+				width: 100%;
+				padding: 10px;
+				text-align: left;
+				font-size: 24px;
+			}
+
+			.head h3 {
+				font-size: 18px;
+			}
+
+			.ng-body, .fb-body, .ins-body {
+				width: 100%;
+				margin-left: 0;
+				margin-left: 100px;
+			}
+
+			.ng-body1, .fb-body1, .ins-body1 {
+				width: 50px;
+				font-size: 20px;
+			}
+
+			.ng-body2, .fb-body2, .ins-body2 {
+				width: calc(100% - 60px);
+				font-size: 16px;
+			}
+
+			.section4 {
+				width: 100%;
+				height: auto;
+			}
+
+}*/
+        
+       /* @media only screen and (max-width: 768px) {
+        	.div{
+        		width: 700px;
+        		overflow-y: hidden;
+        		overflow-x: hidden;
+        	}
+			.main {
+				width: 700px;
+			}
+
+			.section {
+				width: 700px;
+				height: auto;
+			}
+
+			.image {
+				width: 700px;
+				height: auto;
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.head {
+				width: 700px;
+				padding: 0px;
+				text-align: left;
+				font-size: 24px;
+			}
+
+			.head h3 {
+				font-size: 22px;
+			}
+
+			.ng-body, .fb-body, .ins-body {
+				width: 700px;
+				margin-left: 0;
+				margin-left: 00px;
+			}
+
+			.ng-body1, .fb-body1, .ins-body1 {
+				width: 50px;
+				font-size: 30px;
+			}
+
+			.ng-body2, .fb-body2, .ins-body2 {
+				width: calc(100% - 60px);
+				font-size: 18px;
+			}
+
+			.section4 {
+				width: 700px;
+				height: auto;*/
+			}
+
+			/*.area {
+				width: 100%;
+				margin-left: 0;
+				border-radius: 0;
+			}
+
+			.area1, .area2 {
+				width: 100%;
+				text-align: center;
+				float: none;
+			}
+
+			.area2 {
+				font-size: 18px;
+			}*/
+		}
+      /* @media (min-width: 769px) and (max-width: 1200px) {
+       	.div{
+       		width: 100%;
+       		height: 1550px;
+       	}
+			.main {
+				width: 80%;
+				height: 1400px;
+				
+			}
+
+			.section {
+				width: 100%;
+				height: 900px;
+				height: auto;
+			}
+
+			.image {
+				width: 100%;
+				height: 900px;
+				height: auto;
+				float: none;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.head {
+				width: 100%;
+				height: 300px;
+				text-align: left;
+				font-size: 36px;
+			}
+
+			.head h3 {
+				font-size: 34px;
+			}
+
+			.ng-body, .fb-body, .ins-body {
+				width: 100%;
+				height: 100px;
+				margin-left: 0;
+				padding-left: 0px;
+			}
+
+			.ng-body1, .fb-body1, .ins-body1 {
+				width: 80px;
+				height: 30px;
+				font-size: 30px;
+				padding: 70px;
+				background-color: green;
+			}
+
+			.ng-body2, .fb-body2, .ins-body2 {
+				width: 540px;
+				height: 170px ;
+				font-size: 30px;
+				padding:0px;
+				background-color: red;
+			}
+
+			.section4 {
+				width: 100%;
+				height: 200px;*/
+				
+			}
+
+		    /*.area {
+				width: 100%;
+				margin-left: 0;
+				border-radius: 0;
+			}
+
+			.area1, .area2 {
+				width: 100%;
+				text-align: center;
+				float: none;
+			}
+
+			.area2 {
+				font-size: 18px;
+			}*/
+		
+  @media only screen (max-width: 500px); {
+  	.main {
+  		width: 500px;
+  		overflow-x: hidden;
+  		overflow-y: hidden;
+  		background-color: red;
+  	}
+	  	}
+
+		
+	
+	</style>
+  
+</head>
+<body>
+<div class="div">
+<div class="main">
+	<div class="section">
+		<div class="image">
+			<img src="C:\Users\Hp\Documents\form\image.PNG" height="350px" width="699px">
+		</div>
+		<div class="head">
+			<h3 style="font-size: 28px; text-align:left; margin-left:115px ;">Connect with us on social media</h3>
+			<p style="font-size:20px; text-align: left; margin-left: 115px; margin-top: -16px;">Follow us and get updates delivered to your favorite <br>
+            Social media channel.</p>
+		</div>
+	</div>
+	<div class="section1">
+		<div class="part1">
+			<div class="ng-body">
+				<div class="ng-body1">
+					<i class="fa-solid fa-globe"></i>
+				</div>
+				<a href="https://www.theboundlessthink.com/" target=_blank style="color: black; text-decoration: none;">
+					<div class="ng-body2">	
+						<span style="margin-left: 5px; font-family: sans-serif;">Visit us online</span>
+					<p style="font-size:18px; margin-top: 0px; margin-left: 5px; color:grey;">www.theboundlessthink.com</p>
+					</div></a>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="fb-body">
+				<div class="fb-body1">
+					<i class="fa-brands fa-facebook "></i>
+				</div>
+				<a href="https://www.facebook.com/theboundlessthink" target=_blank style="color: black; text-decoration: none;"> <div class="fb-body2">
+					<span style="margin-left: 5px; font-family:sans-serif;">Facebook</span>
+					<p style="font-size:18px; margin-top: 0px; margin-left: 5px; color:grey;">Become a fan</p>
+				</div></a>
+			</div>
+		</div>
+		<div class="part3">
+			<div class="ins-body">
+				<div class="ins-body1">
+					<i class="fa-brands fa-square-instagram"></i>
+				</div>
+				<a href="https://www.instagram.com/theboundlessthink/" target=_blank style="color:black; text-decoration: none;"><div class="ins-body2">
+					<span style="margin-left: 5px; font-family:sans-serif;">Instagram</span>
+					<p style="font-size:18px; margin-top: 0px; margin-left: 5px; color: grey;">Follow</p>
+				</div></a>
+			</div>
+		</div>
+		<div class="section4">
+			<!--div class="area">
+				<button class="btn">
+					<div class="area1">
+					<img src="C:\Users\Hp\Downloads\share-sign-white-icon-vector-15479295-removebg-preview.png" height="30px" width="35px" style="margin-top:px; margin-right: 15px;">
+				</div>
+				<div class="area2">
+					<p style="margin-left:3px; margin-top:14px;">Share this page</p>
+				</div>
+				</button>
+			</div-->
+			<input type="text" value="https://www.theboundlessthink.com/" id="myInput" class="input">
+			<div class="srcc">
+			<button onclick="myFunction()" onmouseout="outFunc()" class="btnbody">
+  <span class="btn1" id="myTooltip">Copy to clipboard</span>
+  Copy text
+  </button>
+</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<script>
+		function myFunction(){
+		    var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+  
+            var srcc = document.getElementById("myTooltip");
+            srcc.innerHTML = "Copied" ;
+}
+
+          function outFunc() {
+          var srcc = document.getElementById("myTooltip");
+          srcc.innerHTML = "Copy to clipboard";
+}
+			// navigator.clipboard.writeText(copyText.value);
+
+			//alert("Copied the text: " + copyText.value);*/
+		
+	</script>
+</body>
+</html>
